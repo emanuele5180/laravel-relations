@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Location extends Model
 {
   protected $fillable = [
-    
+
    'name',
    'street',
    'city',
@@ -16,4 +16,9 @@ class Location extends Model
 
 
   ];
+
+  public function employees() {
+
+    return $this -> hasMany(Employee::class);
+  }
 }
