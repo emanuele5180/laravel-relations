@@ -19,7 +19,9 @@ class CreateEmployeesTable extends Migration
             $table -> string ('firstname');
             $table -> string ('lastname');
             $table -> date ('date_of_birth');
-            $table -> string ('private_code');           
+            $table -> string ('private_code');
+
+            $table -> bigInteger('location_id') -> unsigned();          
 
 
             $table->timestamps();
