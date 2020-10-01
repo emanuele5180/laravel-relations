@@ -23,4 +23,9 @@ class Employee extends Model
     return $this -> belongsTo(Location::class);
   }
 
+  public function tasks() {
+
+    return $this -> belongsToMany(Task::class);
+  }
+
 }

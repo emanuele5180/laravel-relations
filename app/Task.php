@@ -18,5 +18,10 @@ class Task extends Model
 
   ];
 
-  
+  public function employees() {
+
+    return $this -> belongsToMany(Employee::class);
+  }
+
+
 }
