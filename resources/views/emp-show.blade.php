@@ -12,7 +12,7 @@
   <ul>
     <li>
 
-      date of birth: {{ $emp -> date_of _birth }}
+      date of birth: {{ $emp -> date_of_birth }}
 
     </li>
     <li>
@@ -23,8 +23,8 @@
     <li>
       Location: {{ $emp -> location -> name }}
       (
-        {{ $emp -> location -> city }} - {}
-        {{ $emp -> location -> state }}
+        ({{ $emp -> location -> city }} -
+        {{ $emp -> location -> state }})
 
 
       )
