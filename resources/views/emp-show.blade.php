@@ -24,6 +24,24 @@
         {{ $emp -> location -> state }})
     </li>
 
+    <li>
+      Tasks:
+      <ul>
+        @foreach ($emp -> tasks as $tas)
+
+          <li>
+
+            {{ $tas ->  name }}:
+            {{ $tas ->  start_date }} -
+            {{ $tas ->  end_date }} -
+
+          </li>
+
+        @endforeach
+      </ul>
+      
+    </li>
+
 
   </ul>
 
