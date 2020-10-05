@@ -10,8 +10,6 @@
 
           {{ $emp -> firstname }}
           {{ $emp -> lastname }}
-
-
         </a>
 
       </li>
